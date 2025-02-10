@@ -56,11 +56,10 @@ h2 {
     border-color: #03e9f4;
 }
 
-/* Updated tick mark color to strong black */
 .options input[type="checkbox"]:checked::after {
     content: '\2714';
     font-size: 14px;
-    color: #000;  /* Strong black color */
+    color: #000;  
     position: absolute;
     left: 50%;
     top: 50%;
@@ -121,7 +120,6 @@ textarea::placeholder {
     font-size: 16px;
 }
 
-/* Disable the blue border (and focus styling) for the generated password input */
 #password:focus {
     outline: none !important;
     border: none !important;
@@ -173,7 +171,6 @@ button:hover {
         padding: 10px;
     }
 
-    /* Disable scrolling on phone-sized screens */
     body {
         overflow: hidden;
     }
