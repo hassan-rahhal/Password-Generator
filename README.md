@@ -16,7 +16,7 @@ This web-based password generator allows users to create secure passwords based 
   - **Special Characters**
 
 - **Adjustable Password Length:**  
-  Specify the desired length of your password using a number input (minimum 8, maximum 32 characters).
+  Specify the desired length of your password using a number input (minimum 8 characters).
 
 - **Responsive Design:**  
   The layout adjusts gracefully for different screen sizes using media queries, ensuring a smooth experience on both desktop and mobile devices.
