@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -56,10 +56,11 @@ h2 {
     border-color: #03e9f4;
 }
 
+/* Updated tick mark color to strong black */
 .options input[type="checkbox"]:checked::after {
     content: '\2714';
     font-size: 14px;
-    color: #121212;
+    color: #000;  /* Strong black color */
     position: absolute;
     left: 50%;
     top: 50%;
@@ -93,6 +94,13 @@ textarea::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
 
+#password {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 .password-box {
     display: flex;
     align-items: center;
@@ -111,6 +119,13 @@ textarea::placeholder {
     color: white;
     text-align: center;
     font-size: 16px;
+}
+
+/* Disable the blue border (and focus styling) for the generated password input */
+#password:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .password-box button {
@@ -144,15 +159,22 @@ button:hover {
 
 @media (max-width: 480px) {
     .container {
-        width: 95%;
+        width: 85%;
+        padding: 10px;
+        overflow: hidden;
     }
     
     .options label {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     button {
-        font-size: 14px;
+        font-size: 12px;
         padding: 10px;
+    }
+
+    /* Disable scrolling on phone-sized screens */
+    body {
+        overflow: hidden;
     }
 }
