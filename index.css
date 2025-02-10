@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(3, 233, 244, 0.8);
+    max-width: 400px;
+    width: 90%;
+}
+
+h2 {
+    color: #03e9f4;
+    margin-bottom: 20px;
+}
+
+.options {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.options input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #2c2c2c;
+    border: 2px solid #03e9f4;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.options input[type="checkbox"]:checked {
+    background: #03e9f4;
+    border-color: #03e9f4;
+}
+
+.options input[type="checkbox"]:checked::after {
+    content: '\2714';
+    font-size: 14px;
+    color: #121212;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.password-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2c2c2c;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.password-box input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: transparent;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.password-box button {
+    background: #03e9f4;
+    color: #121212;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.password-box button:hover {
+    background: #029eb8;
+}
+
+button {
+    background: #03e9f4;
+    color: #121212;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #029eb8;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+    
+    .options label {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
